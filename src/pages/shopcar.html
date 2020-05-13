@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/shopcar.css">
+  <title>Document</title>
+</head>
+<body>
+    !!include('header2.html')
+    <div class="car_top container">
+      <label for="all" class="row">
+        
+        <input type="checkbox" id="all">
+        全选
+      </label>
+    </div>
+  
+  <div class="car_main container">
+    <!-- <div class="row ca_box">
+        <div class="ca_input_box">
+            <input type="checkbox">
+        </div>
+        <div class="ca_content_box">
+          <div class="ca_content">
+            <img src="//imgservice.suning.cn/uimg1/b2c/image/Fpt35QiP7UbLb64SZzEjww.jpg_100w_100h_4e" alt="">
+            <p>良品铺子 草莓脆 20gx2袋 速冻脱水 干果 牛奶搭档 休闲食品蜜饯零食</p>
+          </div>
+          <div class="ca_jj">
+            <span class="ca_sum_d">-</span>
+            <div class="ca_shuzi">1</div>
+            <span class="ca_sum_u">+</span>
+          </div>
+          <div class="ca_price">
+            <i>¥</i>
+            <span>25.00</span>
+          </div>
+          <div class="ca_con_sc">删除</div>
+        </div>
+    </div> -->
+   
+  </div>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../lib/utile.js"></script>
+  <script src="../js/shopcar.js"></script>
+  <script>
+    var arr = Array.from($('.car_main input'))
+    
+    $('#all').change(function () {
+      $('.car_main input').prop('checked',this.checked)
+    })
+
+    $('.car_main input').change(function () {
+      var flag = arr.every(function (item,index) {
+        return item.checked
+      })
+      $('#all').prop('checked', flag)
+    })
+
+    
+  </script>
+
+</body>
+</html>

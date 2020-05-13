@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body, html {
+  background: #f8f8f8;
+}
+ol,li,ul {
+  list-style: none;
+}
+header>.header {
+  height: 88px;
+  width: 970px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header>.loge {
+  height: 100%;
+  width: 192px;
+  background: url(../images/sprite.png) no-repeat;
+
+}
+.header>.loge_text {
+  box-sizing: border-box;
+  width: 760px;
+  height: 26px;
+  background: #fefff1;
+  border: 1px solid #fecd66;
+  font-size: 12px; 
+  padding: 4px 0;
+  margin-left:5px; 
+}
+.header_right {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  font-size: 12px;
+}
+.header>a{
+  color: #000;
+}
+.main {
+  width: 100%;
+  height: 570px;
+  background: url(../images/loginbj.jpg) no-repeat;
+  background-position:center center; 
+  position: relative;
+}
+.main>.login_box{
+  
+  width: 360px;
+  height: 410px;
+  background: #fff;
+  position: absolute;
+  right: 200px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.main>.login_box>.login_tab{
+  display: flex;
+}
+.main>.login_box>.login_tab>a:hover{
+  text-decoration: none;
+}
+.main>.login_box>.login_tab>a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #eee;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main>.login_box>.login_tab>a>i.active {
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background: #f60;
+  bottom: -1px;
+  left: 50%;
+  margin-left: -35px;
+}
+.main>.login_box>.login_tab>a:hover{
+  color: #000;
+  text-decoration: none;
+}
+.main>.login_box>.login_tab>a.active2 {
+  color: #f60;
+  text-decoration: none;
+}
+.login_box .biaodan {
+  margin-top:10px; 
+  width: 100%;
+  height: 236px;
+  /* background: #f60; */
+  
+
+}
+.login_box .biaodan form {
+  padding: 0 24px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+label {
+  margin-bottom: 0;
+  color: #ccc;
+  cursor: text;
+  background: #fff;
+  height: 100%;
+  width: 36px;
+
+}
+label::before {
+  font-size:24px;
+
+
+}
+input {
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+.user {
+  margin-top:30px; 
+}
+.user , .pass{
+  height: 38px;
+  width: 312px;
+  border: 1px solid #ddd; 
+  display: flex;
+  align-items: center;
+}
+::placeholder{
+  color: #ddd;
+}
+.login_help {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.help_right, .help_left {
+  font-size: 12px;
+  color: #000;
+}
+.help {
+  position: relative;
+}
+.help_left {
+  position: absolute;
+  right: 0;
+}
+.help_right:hover {
+  color: #f60;
+  text-decoration: none;
+}
+.help_left:hover {
+  color: #f60;
+}
+.main_foot {
+  flex: 1;
+  background: #fff;
+  position: relative;
+}
+.main_foot .jx {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+.tupian {
+  position: absolute;
+  bottom: 0;
+  width: 310px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1px solid #ddd;
+  padding: 19px 0 17px;
+  background: #fff;
+}
+.tupian > ul {
+  display: flex;
+  height: 16px;
+  align-items: center;
+  margin: 0;
+  overflow: hidden; 
+
+}
+.tupian > ul li{
+  border-right:1px solid #ddd;
+}
+.tupian > ul li a {
+  display: block;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-right:5px; 
+}
+.tupian > ul li a i {
+  display:inline-block;
+  width: 16px;
+  height: 16px;
+  margin:0 5px; 
+
+}
+.tupian_text {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  margin-left: -64px;
+  color: #999;
+  width: 128px;
+  background: #fff;
+  text-align: center;
+}
+#login1 {
+  background: url(../images/sprite\ 2.png) no-repeat;
+  background-position: -140px -108px;
+}
+#login2 {
+  background: url(../images/sprite\ 2.png) no-repeat;
+  background-position: -90px -27px;
+}
+#login3 {
+  background: url(../images/sprite\ 2.png) no-repeat;
+  background-position: -119px -108px;
+}#login4 {
+  background: url(../images/sprite\ 2.png) no-repeat;
+  background-position: 0 -149px;
+}

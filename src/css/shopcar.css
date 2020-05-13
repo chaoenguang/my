@@ -1,0 +1,100 @@
+*,p,ul{margin: 0;padding: 0;}
+ul,ol,li {
+  list-style: none;
+}
+html,body{
+  box-sizing: border-box;
+}
+i {
+  font-family: Arial;
+}
+body, button, input, select, textarea,p ,i{
+  font: 12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+  -webkit-font-smoothing: antialiased;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.car_top{
+  height: 34px;
+  width: 1190px !important;
+  border-top: 2px solid #ddd;
+  margin: 10px 0;
+}
+.ca_box{
+  height: 112px;
+  width: 1188px;
+  background: #ddd;
+  margin-bottom: -1px;
+  padding: 15px 20px;
+  display: flex;
+  border: 1px solid #ddd;
+  position: relative;
+  margin-top: 5px;
+}
+.ca_input_box{
+  height: 100%;
+  width: 47px;
+  
+}
+.ca_input_box>input{
+  height: 14px;
+  width: 14px;
+}
+.ca_content_box{
+  height: 100%;
+  flex: 1;
+}
+.ca_content{
+  height: 100%;
+  width: 392px;
+  display: flex;
+}
+.ca_content>img{
+  width: 80px;
+  height: 80px;
+}
+.ca_content>p{
+  width: 239px;
+  margin-left: 10px;
+  display: block;
+  clear: both;
+  margin-bottom: 2px;
+  max-height: 36px;
+  line-height: 18px;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.ca_jj {
+  height: 22px;
+  width: 70px;
+  position: absolute;
+  right: 450px;
+  top: 15px;
+  display: flex;
+  border: 1px solid #ddd;
+}
+.ca_jj>span,.ca_shuzi{
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ca_price{
+  position: absolute;
+  top: 15px;
+  right: 300px;
+  font-weight: 800;
+}
+.ca_price>i{
+  font-weight: 800;
+}
+.ca_con_sc{
+  position: absolute;
+  top: 15px;
+  right: 100px;
+}

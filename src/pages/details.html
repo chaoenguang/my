@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/details.css">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box_eg {
+      width: 450px;
+      border: 1px solid #ddd;
+      position: relative;
+    }
+    .showBox {
+      width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .showBox>img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .mask {
+      height: 200px;
+      width: 200px;
+      background: orange;
+      opacity: .3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: none;
+    }
+    .list {
+      height: 100px;
+      display: flex;
+      padding: 10px 20px;
+      align-items: center;
+      box-sizing: border-box;
+      border-top: 1px solid #ddd;
+    }
+    .list>p{
+      height: 54px;
+      width: 54px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .active {
+      border: 1px solid #ccc;
+    }
+    .enlarge {
+      height: 500px;
+      width: 500px;
+      position: absolute;
+      top: -10px;
+      left: 100%;
+      overflow: hidden;
+      background-size:800px 800px;
+      z-index: 10;
+    }
+    </style>
+</head>
+<body>
+    !!include('header2.html')
+    <div class="de_header_box container">
+      <a href="../pages/list.html" class="btn btn-info">返回列表页</a>
+    </div>
+    <div class="box container">
+      <!-- <div class="media">
+        <div class="box_left media-left">
+          <div class="box_eg" id="box">
+            <div class="showBox">
+              <img src="../images/gouwuce.png" alt="">
+              <div class="mask"></div>
+            </div>
+            <ul class="list">
+              <p class="active">
+                <img data-src="./imgs/1.big.jpg" data-show-src="./imgs/1.jpg" src="./imgs/1.small.jpg" alt="">
+              </p>
+              <p>
+                <img data-src="./imgs/2.big.jpg" data-show-src="./imgs/2.jpg" src="./imgs/2.small.jpg" alt="">
+              </p>
+            </ul>
+            <div class="enlarge"></div>
+          </div>
+        </div>
+        <div class="box_right media-body">
+          <h4 class="media-heading">商品的详细描述信息</h4>
+          <div class="btns btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">XL</button>
+            <button type="button" class="btn btn-default">L</button>
+            <button type="button" class="btn btn-default">M</button>
+            <button type="button" class="btn btn-default">S</button>
+          </div>
+          <p class="price">
+            <i class="glyphicon glyphicon-jpy"></i>
+            <span>${ res.goods_price }</span>
+          </p>
+          <div>
+            <a href="javascript:;" class="btn btn-info btn-warning">加入购物车</a>
+            <a href="javascript:;" class="btn btn-info btn-danger">立即购买</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    
+    
+    
+    !!include('foot.html')
+    <script src="../lib/utils.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../lib/enlarge.js"></script>
+    <script src="../js/details.js"></script>
+   
+</body>
+</html>
